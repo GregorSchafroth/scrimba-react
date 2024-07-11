@@ -13,8 +13,8 @@ function Header(){
   )
 }
 
-function Page(){
-  return (
+function MainContent(){
+  return(
     <div>
       <ul>
         <li>Modern UI Development: Build dynamic and responsive user interfaces.</li>
@@ -22,6 +22,13 @@ function Page(){
         <li>Large Community: Abundant resources, support, and libraries.</li>
         <li>High Demand: Valuable skill in the job market.</li>
       </ul>
+    </div>
+  )
+}
+
+function Footer(){
+  return(
+    <div>
       <footer>
         <small>© 2024 Gregor Schafroth. All rights reserved.</small>
       </footer>
@@ -29,9 +36,17 @@ function Page(){
   )
 }
 
+function Page(){
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+    
+  )
+}
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <div>
-    <Header />
-    <Page />
-  </div>
+  <Page />
 )
