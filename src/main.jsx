@@ -7,15 +7,22 @@ import './index.css'
 function Header(){
   return(
     <header>
-      <img src={reactLogo}></img>
-      <h1>Why I am excited to learn react</h1>
+      <nav className='nav-bar'>
+        <img src={reactLogo} className='nav-img'></img>
+        <ul className='nav-items'>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
     </header>
   )
 }
 
 function MainContent(){
   return(
-    <div>
+    <div className='main-content'>
+      <h1>Why I am excited to learn react</h1>
       <ul>
         <li>Modern UI Development: Build dynamic and responsive user interfaces.</li>
         <li>Component-Based Architecture: Reusable components streamline development.</li>
