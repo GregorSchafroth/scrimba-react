@@ -1,21 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Header from './components/Header.jsx'
-import MainContent from './components/MainContent.jsx'
-import Footer from './components/Footer.jsx'
+import App from './App'
 
-function App(){
+function Main(){
   return (
     <div>
-      <Header />
-      <MainContent />
-      <Footer />
+      <App />
     </div>
     
   )
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <App />
+  <Main />
 )
